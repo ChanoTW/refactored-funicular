@@ -1,10 +1,10 @@
 package Practice;
 
-public class Exam12´ÙÀÌ¾Æ¸óµåÇüÅÂ {
+public class Exam12Â´Ã™Ã€ÃŒÂ¾Ã†Â¸Ã³ÂµÃ¥Ã‡Ã¼Ã…Ã‚ {
 
 	public static void main(String[] args) {
 		
-		
+		Scanner sc = new Scanner(System.in);
 
 	}
 
