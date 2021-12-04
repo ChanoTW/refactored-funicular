@@ -1,16 +1,16 @@
-package ¸Ş¼Òµå;
+package ë©”ì†Œë“œ;
 
 import java.util.Scanner;
 
-public class Exam08¸Ş¼Òµå¿À¹ö·Îµù {
+public class Exam08ë©”ì†Œë“œì˜¤ë²„ë¡œë”© {
 
 	public static void main(String[] args) {
-		//¸Ş¼Òµå ¿À¹ö·Îµù ±¸Á¶ ¿¹½Ã!!!
+		//ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”© êµ¬ì¡° ì˜ˆì‹œ!!!
 		
 		int a = 10;
 		int b = 2;
 		
-		//µÎ°³ ¼ö¸¦ ´õÇØÁÙ ¼ö ÀÖ´Â add() ¸¸µé±â
+		//ë‘ê°œ ìˆ˜ë¥¼ ë”í•´ì¤„ ìˆ˜ ìˆëŠ” add() ë§Œë“¤ê¸°
 		add(10, 2);
 		add1(10, 2.4);
 
@@ -18,14 +18,12 @@ public class Exam08¸Ş¼Òµå¿À¹ö·Îµù {
 		sc.next();
 		
 	}
-	
-	//±âÁ¸ÀÇ add ¸Ş¼Òµå ÇÔ¼ö
+	//ê¸°ì¡´ì˜ add ë©”ì†Œë“œ í•¨ìˆ˜
 	public static void add(int a, int b) {
 		System.out.println(a+b);
 
 	}
-	
-	//Á¤¼öÇüÀÇ add¸Ş¼Òµå¸¦ Áßº¹Á¤ÀÇ ÇÏ¿© »ı¼ºµÈ ¸Ş¼Òµå
+	//ì •ìˆ˜í˜•ì˜ addë©”ì†Œë“œë¥¼ ì¤‘ë³µì •ì˜ í•˜ì—¬ ìƒì„±ëœ ë©”ì†Œë“œ
 	public static void add1(int a, double b) {
 		System.out.println(a+b);
 	}
