@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class Exam02cal¸Þ¼Òµå {
+public class Exam02calë©”ì†Œë“œ {
 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Ã¹¹øÂ° Á¤¼ö >>");
+		System.out.print("ì²«ë²ˆì§¸ ì •ìˆ˜ >>");
 		int num1 = sc.nextInt();
-		System.out.print("µÎ¹øÂ° Á¤¼ö >>");
+		System.out.print("ë‘ë²ˆì§¸ ì •ìˆ˜ >>");
 		int num2 = sc.nextInt();
 		
 		char op = '-';
@@ -15,6 +15,7 @@ public class Exam02cal¸Þ¼Òµå {
 		System.out.println(cal(num1,num2,op));
 
 	}
+	
 	
 	public static int cal(int x1, int x2, char x3) {
 		return x1 - x2;
