@@ -2,7 +2,7 @@ package Final_Java;
 
 import java.util.Random;
 
-public class Bonus02·Î¶Ç {
+public class Bonus02ë¡œë˜ {
 
 	public static void main(String[] args) {
 		Random rd = new Random();
@@ -12,7 +12,7 @@ public class Bonus02·Î¶Ç {
 		for(int i = 0; i<arr.length; i++) {
 			num = rd.nextInt(45)+1;
 			arr[i] = num;
-			for(int j = 0; j<i; j++) {//¾ÆÁ÷ ¸ğµç ¹è¿­ÀÌ Á¤ÇØÁöÁö ¾È¾ÒÀ¸´Ï i¹è¿­ÀÌ Á¤ÇØÁøµ¥ ±îÁö¸¸ ¹İº¹ÇÑ´Ù.
+			for(int j = 0; j<i; j++) {//ì•„ì§ ëª¨ë“  ë°°ì—´ì´ ì •í•´ì§€ì§€ ì•ˆì•˜ìœ¼ë‹ˆ ië°°ì—´ì´ ì •í•´ì§„ë° ê¹Œì§€ë§Œ ë°˜ë³µí•œë‹¤.
 				if(arr[i] == arr[j]) {
 					i--;
 				}
@@ -21,9 +21,12 @@ public class Bonus02·Î¶Ç {
 		}
 		
 		for(int i = 0; i<arr.length; i++) {
-			System.out.println("Çà¿îÀÇ ¼ıÀÚ : " + arr[i]);
+			System.out.println("í–‰ìš´ì˜ ìˆ«ì : " + arr[i]);
 		}
 
+		
+		
+		
 	}
 
 }
