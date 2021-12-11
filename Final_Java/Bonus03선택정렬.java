@@ -2,7 +2,7 @@ package Final_Java;
 
 import java.util.Scanner;
 
-public class Bonus03¼±ÅÃÁ¤·Ä {
+public class Bonus03ì„ íƒì •ë ¬ {
 
 	public static void main(String[] args) {
 		
@@ -10,7 +10,7 @@ public class Bonus03¼±ÅÃÁ¤·Ä {
 		int[] arr = new int [5];
 		
 		for(int i = 0; i<5; i++) {
-			System.out.print(i+1 + "¹øÂ° ¼ö ÀÔ·Â : ");
+			System.out.print(i+1 + "ë²ˆì§¸ ìˆ˜ ì…ë ¥ : ");
 			int num = sc.nextInt();
 			arr[i] = num;
 		}
@@ -25,11 +25,13 @@ public class Bonus03¼±ÅÃÁ¤·Ä {
 			}
 		}
 		
-		System.out.print("Á¤·Ä ÈÄ : ");
+		System.out.print("ì •ë ¬ í›„ : ");
 		for(int i = 0; i<arr.length; i++) {
 			System.out.print(arr[i] + " ");
 		}
 
+		
+		
 		
 	}
 
