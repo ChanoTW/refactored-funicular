@@ -6,15 +6,15 @@ public class LandMemberMain {
 	public static void main(String[] args) {
 		LandMemberDAO dao = new LandMemberDAO();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("====È¸¿ø°ü¸® ½Ã½ºÅÛ====");
+		System.out.println("====íšŒì›ê´€ë¦¬ ì‹œìŠ¤í…œ====");
 
 		while (true) {
-			System.out.print("1.·Î±×ÀÎ 2.È¸¿ø°¡ÀÔ 3.È¸¿ø¸ñ·Ïº¸±â 4.È¸¿øÁ¤º¸¼öÁ¤ 5.È¸¿øÅ»Åğ 6.Á¾·á >>");
+			System.out.print("1.ë¡œê·¸ì¸ 2.íšŒì›ê°€ì… 3.íšŒì›ëª©ë¡ë³´ê¸° 4.íšŒì›ì •ë³´ìˆ˜ì • 5.íšŒì›íƒˆí‡´ 6.ì¢…ë£Œ >>");
 			int choice = sc.nextInt();
 
 			if (choice == 1) {
 
-				System.out.println("====·Î±×ÀÎ====");
+				System.out.println("====ë¡œê·¸ì¸====");
 				System.out.print("ID : ");
 				String id = sc.next();
 				System.out.print("PASSWORD : ");
@@ -24,11 +24,9 @@ public class LandMemberMain {
 
 				if (nick != null) {
 					while (nick != null) {
-						System.out.println(nick + "´Ô È¯¿µÇÕ´Ï´Ù!");
-						System.out.println("°ÔÀÓ ½ÃÀÛ");
+						System.out.println(nick + "ë‹˜ í™˜ì˜í•©ë‹ˆë‹¤!");
+						System.out.println("ê²Œì„ ì‹œì‘");
 						break;
-						
-						
 						
 						
 						
@@ -47,51 +45,51 @@ public class LandMemberMain {
 					}
 					while (true) {
 						if (id.equals("admin")) {
-							System.out.println("====°ü¸®ÀÚ ¸ğµå====");
-							System.out.println("1. È¸¿øÁ¤º¸¼öÁ¤ 2. È¸¿ø»èÁ¦ 3. ÀüÃ¼È¸¿øIDº¸±â 4. °ü¸®ÀÚ ·Î±×¾Æ¿ô");
-							System.out.print("¼ıÀÚÀÔ·Â >> ");
+							System.out.println("====ê´€ë¦¬ì ëª¨ë“œ====");
+							System.out.println("1. íšŒì›ì •ë³´ìˆ˜ì • 2. íšŒì›ì‚­ì œ 3. ì „ì²´íšŒì›IDë³´ê¸° 4. ê´€ë¦¬ì ë¡œê·¸ì•„ì›ƒ");
+							System.out.print("ìˆ«ìì…ë ¥ >> ");
 							choice = sc.nextInt();
 							if (choice == 1) {
-								System.out.println("====°ü¸®ÀÚ È¸¿øÁ¤º¸¼öÁ¤====");
-								System.out.print("¾ÆÀÌµğ ÀÔ·Â : ");
+								System.out.println("====ê´€ë¦¬ì íšŒì›ì •ë³´ìˆ˜ì •====");
+								System.out.print("ì•„ì´ë”” ì…ë ¥ : ");
 								String change_id = sc.next();
-								System.out.print("º¯°æÇÒ ´Ğ³×ÀÓ ÀÔ·Â : ");
+								System.out.print("ë³€ê²½í•  ë‹‰ë„¤ì„ ì…ë ¥ : ");
 								String change_nick = sc.next();
 
 								int cnt = dao.adminUpdate(change_id, change_nick);
 
 								if (cnt > 0) {
-									System.out.println(change_nick + "À¸·Î È¸¿øÁ¤º¸ ¼öÁ¤ ¿Ï·á!!!");
+									System.out.println(change_nick + "ìœ¼ë¡œ íšŒì›ì •ë³´ ìˆ˜ì • ì™„ë£Œ!!!");
 								} else {
-									System.out.println("È¸¿øÁ¤º¸ ¼öÁ¤ ½ÇÆĞ...");
+									System.out.println("íšŒì›ì •ë³´ ìˆ˜ì • ì‹¤íŒ¨...");
 								}
 							} else if (choice == 2) {
 
-								System.out.println("====È¸¿ø»èÁ¦====");
-								System.out.println("»èÁ¦ÇÒ È¸¿øÀ» ¼±ÅÃÇÕ´Ï´Ù.");
+								System.out.println("====íšŒì›ì‚­ì œ====");
+								System.out.println("ì‚­ì œí•  íšŒì›ì„ ì„ íƒí•©ë‹ˆë‹¤.");
 								System.out.print("ID : ");
 								String removeId = sc.next();
 
 								if (dao.check(removeId)) {
 
-									System.out.print(nick + "È¸¿øÀ» ÁøÂ¥ Å»Åğ¸¦ ½ÃÅ°½Ã°Ú½À´Ï±î? Y/N");
+									System.out.print(nick + "íšŒì›ì„ ì§„ì§œ íƒˆí‡´ë¥¼ ì‹œí‚¤ì‹œê² ìŠµë‹ˆê¹Œ? Y/N");
 									String yn = sc.next();
 
 									if (yn.equals("y") || yn.equals("Y")) {
 										int cnt = dao.deleteId(removeId);
 										if (cnt > 0) {
-											System.out.println("È¸¿ø»èÁ¦ ¿Ï·á!!!");
+											System.out.println("íšŒì›ì‚­ì œ ì™„ë£Œ!!!");
 										}
 									} else if (yn.equals("n") || yn.equals("N")) {
-										System.out.println("Ã³À½ºÎÅÍ ´Ù½Ã ½ÃÀÛÇÕ´Ï´Ù.");
+										System.out.println("ì²˜ìŒë¶€í„° ë‹¤ì‹œ ì‹œì‘í•©ë‹ˆë‹¤.");
 									} else {
-										System.out.println("Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.");
+										System.out.println("ì˜ëª» ì…ë ¥í–ˆìŠµë‹ˆë‹¤.");
 									}
 								} else {
-									System.out.println("È¸¿øÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+									System.out.println("íšŒì›ì´ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 								}
 							} else if (choice == 3) {
-								System.out.println("====ÀüÃ¼È¸¿øIDº¸±â====");
+								System.out.println("====ì „ì²´íšŒì›IDë³´ê¸°====");
 								ArrayList<LandMemberDTO> list = dao.selectAll();
 
 								int listNum = 1;
@@ -102,39 +100,39 @@ public class LandMemberMain {
 									}
 								}
 							} else if (choice == 4) {
-								System.out.println("===°ü¸®ÀÚ ¸ğµå Á¾·á====");
+								System.out.println("===ê´€ë¦¬ì ëª¨ë“œ ì¢…ë£Œ====");
 							} else {
-								System.out.println("´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+								System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 							}
 							System.out.println();
 						}
 					}
 				} else {
-					System.out.println("·Î±×ÀÎ ½ÇÆĞ...");
+					System.out.println("ë¡œê·¸ì¸ ì‹¤íŒ¨...");
 				}
 
 			} else if (choice == 2) {
-				System.out.println("====È¸¿ø°¡ÀÔ====");
-				System.out.print("¾ÆÀÌµğ ÀÔ·Â :");
+				System.out.println("====íšŒì›ê°€ì…====");
+				System.out.print("ì•„ì´ë”” ì…ë ¥ :");
 				String id = sc.next();
-				System.out.print("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·Â :");
+				System.out.print("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥ :");
 				String pw = sc.next();
-				System.out.print("´Ğ³×ÀÓ ÀÔ·Â :");
+				System.out.print("ë‹‰ë„¤ì„ ì…ë ¥ :");
 				String nick = sc.next();
 				int cnt = dao.join(id, pw, nick);
 
 				if (cnt > 0) {
-					System.out.println("È¸¿ø°¡ÀÔ ¼º°ø");
+					System.out.println("íšŒì›ê°€ì… ì„±ê³µ");
 				} else {
-					System.out.println("È¸¿ø°¡ÀÔ ½ÇÆĞ");
+					System.out.println("íšŒì›ê°€ì… ì‹¤íŒ¨");
 				}
 
 			} else if (choice == 3) {
-				// È¸¿ø ¸ñ·Ï º¸±â
-				System.out.println("====È¸¿ø¸ñ·Ïº¸±â====");
+				// íšŒì› ëª©ë¡ ë³´ê¸°
+				System.out.println("====íšŒì›ëª©ë¡ë³´ê¸°====");
 				ArrayList<LandMemberDTO> list = dao.selectAll();
 
-				// pbk - 1234 - È£µÎ¾Æºü
+				// pbk - 1234 - í˜¸ë‘ì•„ë¹ 
 				for (int i = 0; i < list.size(); i++) {
 					LandMemberDTO m = list.get(i);
 					System.out.print(m.getId() + "-");
@@ -144,49 +142,49 @@ public class LandMemberMain {
 				}
 
 			} else if (choice == 4) {
-				System.out.println("====È¸¿øÁ¤º¸¼öÁ¤====");
-				System.out.println("È¸¿øÁ¤º¸¸¦ È®ÀÎÇÕ´Ï´Ù.");
+				System.out.println("====íšŒì›ì •ë³´ìˆ˜ì •====");
+				System.out.println("íšŒì›ì •ë³´ë¥¼ í™•ì¸í•©ë‹ˆë‹¤.");
 				System.out.print("ID : ");
 				String id = sc.next();
 				System.out.print("PASSWORD : ");
 				String pw = sc.next();
 				String nick = dao.login(id, pw);
-				System.out.println(nick + "´Ô È¸¿øÁ¤º¸°¡ ÀÏÄ¡ÇÕ´Ï´Ù. È¸¿øÁ¤º¸ º¯°æÇÏ¼¼¿ä.");
+				System.out.println(nick + "ë‹˜ íšŒì›ì •ë³´ê°€ ì¼ì¹˜í•©ë‹ˆë‹¤. íšŒì›ì •ë³´ ë³€ê²½í•˜ì„¸ìš”.");
 
-				System.out.print("º¯°æÇÒ NICKNAME : ");
+				System.out.print("ë³€ê²½í•  NICKNAME : ");
 				String new_nick = sc.next();
 
-				System.out.print("º¯°æÇÒ PASSWORD : ");
+				System.out.print("ë³€ê²½í•  PASSWORD : ");
 				String new_pw = sc.next();
 
 				int cnt = dao.update(id, pw, new_nick, new_pw);
 
 				if (cnt > 0) {
-					System.out.println("È¸¿øÁ¤º¸ ¼öÁ¤ ¼º°ø!!!");
+					System.out.println("íšŒì›ì •ë³´ ìˆ˜ì • ì„±ê³µ!!!");
 				} else {
-					System.out.println("È¸¿øÁ¤º¸ ¼öÁ¤ ½ÇÆĞ...");
+					System.out.println("íšŒì›ì •ë³´ ìˆ˜ì • ì‹¤íŒ¨...");
 				}
 
 			} else if (choice == 5) {
-				// È¸¿ø Å»Åğ
-				System.out.println("====È¸¿øÅ»Åğ====");
-				System.out.println("¾ÆÀÌµğ ÀÔ·Â  : ");
+				// íšŒì› íƒˆí‡´
+				System.out.println("====íšŒì›íƒˆí‡´====");
+				System.out.println("ì•„ì´ë”” ì…ë ¥  : ");
 				String id = sc.next();
-				System.out.println("ºñ¹Ğ¹øÈ£ ÀÔ·Â : ");
+				System.out.println("ë¹„ë°€ë²ˆí˜¸ ì…ë ¥ : ");
 				String pw = sc.next();
 				int cnt = dao.delete(id, pw);
 
 				if (cnt > 0) {
-					System.out.println("È¸¿ø»èÁ¦ ¿Ï·á");
+					System.out.println("íšŒì›ì‚­ì œ ì™„ë£Œ");
 				} else {
-					System.out.println("È¸¿ø»èÁ¦ ½ÇÆĞ");
+					System.out.println("íšŒì›ì‚­ì œ ì‹¤íŒ¨");
 				}
 
 			} else if (choice == 6) {
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù...");
+				System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤...");
 				break;
 			} else {
-				System.out.println("Á¤È®ÇÑ ¼ıÀÚ¸¦ ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+				System.out.println("ì •í™•í•œ ìˆ«ìë¥¼ ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 			}
 		}
 
