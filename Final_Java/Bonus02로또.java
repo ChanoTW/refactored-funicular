@@ -17,7 +17,6 @@ public class Bonus02로또 {
 					i--;
 				}
 			}
-			
 		}
 		
 		
