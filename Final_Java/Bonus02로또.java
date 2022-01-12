@@ -23,6 +23,8 @@ public class Bonus02로또 {
 			System.out.println("행운의 숫자 : " + arr[i]);
 		}
 		
+		
+		
 	}
 
 }
