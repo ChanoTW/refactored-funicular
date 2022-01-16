@@ -96,6 +96,7 @@ public abstract class Land000 {
 	public int getPassBuilding() {
 		return passBuilding;
 	}
+	
 
 
 	public void setPassBuilding(int passBuilding) {
