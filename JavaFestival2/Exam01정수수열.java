@@ -2,12 +2,12 @@ package Practice;
 
 import java.util.Scanner;
 
-public class Exam01а╓╪Ж╪Ж©╜ {
+public class Exam01ц│б╓б╪ц╤б╪ц╤б©б╜ {
 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("n ют╥б : ");
+		System.out.print("n ц─ц■б╥ц┌ : ");
 		int num = sc.nextInt();
 		int j = 1;
 		
@@ -15,7 +15,6 @@ public class Exam01а╓╪Ж╪Ж©╜ {
 			System.out.print(j+" ");
 			j += i;
 		}
-		
 
 	}
 
