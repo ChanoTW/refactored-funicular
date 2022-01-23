@@ -1,9 +1,8 @@
-package �޼ҵ�;
+package ¸Þ¼Òµå;
 
-public class Exam01�޼ҵ忹��1 {
+public class Exam01¸Þ¼Òµå¿¹Á¦1 {
 
 	public static void main(String[] args) {
-		
 		
 		
 	}
