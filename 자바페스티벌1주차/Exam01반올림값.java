@@ -1,21 +1,20 @@
-package ÀÚ¹ÙÆä½ºÆ¼¹ú1ÁÖÂ÷;
+package ìžë°”íŽ˜ìŠ¤í‹°ë²Œ1ì£¼ì°¨;
 
 import java.util.Scanner;
 
-public class Exam01¹Ý¿Ã¸²°ª {
+public class Exam01ë°˜ì˜¬ë¦¼ê°’ {
 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹Ý¿Ã¸² Àü °ª : ");
+		System.out.print("ë°˜ì˜¬ë¦¼ ì „ ê°’ : ");
 		int num = sc.nextInt();
 		
 		if (num % 10 >= 5) {
-			System.out.print("¹Ý¿Ã¸² ÈÄ °ª : " +(num/10*10+10));
+			System.out.print("ë°˜ì˜¬ë¦¼ í›„ ê°’ : " +(num/10*10+10));
 		} else {
-			System.out.print("¹Ý¿Ã¸² ÈÄ °ª : " +(num/10*10));
+			System.out.print("ë°˜ì˜¬ë¦¼ í›„ ê°’ : " +(num/10*10));
 		}
-		
 		
 		
 	}
