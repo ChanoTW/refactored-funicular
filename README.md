@@ -1,2 +1,0 @@
-# refactored-funicular
-Study Java
