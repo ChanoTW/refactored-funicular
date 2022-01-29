@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Bonus02로또 {
 
+
 	public static void main(String[] args) {
 		Random rd = new Random();
 		int[] arr = new int[6];
