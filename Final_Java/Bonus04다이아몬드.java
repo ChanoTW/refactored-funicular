@@ -1,11 +1,12 @@
 package Final_Java;
 
-public class Bonus04���̾Ƹ�� {
+public class Bonus04´ÙÀÌ¾Æ¸óµå {
 
 	public static void main(String[] args) {
 		
 		int[][] d = new int [7][7];
 		int cnt = 0;
+		
 		
 		for(int i = 0; i<d.length; i++) {
 			for(int j = 0; j<d.length; j++) {
