@@ -10,6 +10,7 @@ public class Animal {
 	String pattern = "점박이";
 	//이빨갯수
 	int teeth = 24;
+	
 
 	
 }
