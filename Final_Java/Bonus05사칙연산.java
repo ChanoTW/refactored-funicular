@@ -1,6 +1,6 @@
 package Final_Java;
 
-public class Bonus05»çÄ¢¿¬»ê {
+public class Bonus05Â»Ã§Ã„Â¢Â¿Â¬Â»Ãª {
 
 	public static void main(String[] args) {
 		
@@ -25,6 +25,7 @@ public class Bonus05»çÄ¢¿¬»ê {
 		} else {
 			return 0;
 		}
+		
 		
 		
 	}
