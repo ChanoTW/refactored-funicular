@@ -1,8 +1,9 @@
 package Final_Java;
 
-public class Bonus06�Ǻ���ġ {
+public class Bonus06ÇÇº¸³ªÄ¡ {
 
 	public static void main(String[] args) {
+		
 		
 		int input = 8;
 		
