@@ -8,6 +8,7 @@ public class Bonus04´ÙÀÌ¾Æ¸óµå {
 		int cnt = 0;
 		
 		
+		
 		for(int i = 0; i<d.length; i++) {
 			for(int j = 0; j<d.length; j++) {
 				if((i == 0 || i == 6) && (j == 3)) {
