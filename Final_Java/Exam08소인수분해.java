@@ -2,11 +2,12 @@ package Final_Java;
 
 import java.util.Scanner;
 
-public class Exam08¼ÒÀÎ¼öºĞÇØ {
+public class Exam08ì†Œì¸ìˆ˜ë¶„í•´ {
+	
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¼ÒÀÎ¼öºĞÇØ ÇÒ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. : ");
+		System.out.print("ì†Œì¸ìˆ˜ë¶„í•´ í•  ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. : ");
 		int num = sc.nextInt();
 		int index = 0;
 
