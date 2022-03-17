@@ -7,27 +7,28 @@ public class KartMain {
 	public static void main(String[] args) {
 		
 		MyKart spotage = new MyKart();
-		// Ã¹ ½ÃÀÛÁ¡Àº 0! -> spotage.myposition -> 0 ÀÌ¶ó´Â ¼Ò¸®
+		// ì²« ì‹œì‘ì ì€ 0! -> spotage.myposition -> 0 ì´ë¼ëŠ” ì†Œë¦¬
 		
 		Scanner sc = new Scanner(System.in);
 		
 		while(spotage.myposition < 100) {
-			System.out.println("[1]ÀüÁø [2]ÈÄÁø [3]ºÎ½ºÅÍ");
+			System.out.println("[1]ì „ì§„ [2]í›„ì§„ [3]ë¶€ìŠ¤í„°");
 			int menu = sc.nextInt();
 			if(menu == 1) {
-				//Â÷ÀÇ À§Ä¡°¡ 10¸¸Å­ ¾ÕÀ¸·Î °¡¾ßÇÔ
+				//ì°¨ì˜ ìœ„ì¹˜ê°€ 10ë§Œí¼ ì•ìœ¼ë¡œ ê°€ì•¼í•¨
 				spotage.go(10);
 			} else if (menu == 2) {
-				//Â÷ÀÇ À§Ä¡°¡ 10¸¸Å­ µÚ·Î °¡¾ßÇÔ
+				//ì°¨ì˜ ìœ„ì¹˜ê°€ 10ë§Œí¼ ë’¤ë¡œ ê°€ì•¼í•¨
 				spotage.back(10);
 			} else if (menu == 3) {
-				//Â÷ÀÇ À§Ä¡°¡ 30¸¸Å­ ¾ÕÀ¸·Î °¡¾ßÇÔ
+				//ì°¨ì˜ ìœ„ì¹˜ê°€ 30ë§Œí¼ ì•ìœ¼ë¡œ ê°€ì•¼í•¨
 				spotage.booster(30);
 			}
-			System.out.println("ÇöÀç À§Ä¡ : " + spotage.myposition);
+			System.out.println("í˜„ì¬ ìœ„ì¹˜ : " + spotage.myposition);
 
 		}
-		System.out.println("·¹ÀÌ½Ì Á¾·á!!");
+		System.out.println("ë ˆì´ì‹± ì¢…ë£Œ!!");
+		
 
 	}
 
