@@ -1,10 +1,10 @@
 package Exam02;
 
 public class MyKart implements Kart{
-	//ÀÎÅÍÆäÀÌ½º¿¡¼­ »ó¼Ó¹ŞÀº Ãß»ó ¸Ş¼Òµå´Â ¹İµå½Ã ±¸Çö ÇØÁÖ¾î¾ßÇÔ!
+	//ì¸í„°í˜ì´ìŠ¤ì—ì„œ ìƒì†ë°›ì€ ì¶”ìƒ ë©”ì†Œë“œëŠ” ë°˜ë“œì‹œ êµ¬í˜„ í•´ì£¼ì–´ì•¼í•¨!
 	
-	int myposition = position; // MyKart°¡ »ı¼ºµÇ¸é
-	//¹«Á¶°Ç myPosition Àº 0ÀÌ´Ù(½ÃÀÛÀ§Ä¡) 
+	int myposition = position; // MyKartê°€ ìƒì„±ë˜ë©´
+	//ë¬´ì¡°ê±´ myPosition ì€ 0ì´ë‹¤(ì‹œì‘ìœ„ì¹˜) 
 	
 
 	@Override
@@ -22,4 +22,5 @@ public class MyKart implements Kart{
 		myposition += power;
 	}
 
+	
 }
