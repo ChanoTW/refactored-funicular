@@ -17,8 +17,6 @@ public interface Kart {
 	public abstract void booster(int power); // power -> 부스터를 얼마나 쎄게 할거인지
 	
 	
-	
-	
 
 	
 }
